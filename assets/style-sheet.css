@@ -21,3 +21,7 @@
     grid-area: "flexbox-row"
     
 }
+
+pre {
+    font-family:monospace;
+}
