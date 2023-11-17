@@ -1,6 +1,6 @@
 * {
     font-family:Georgia, 'Times New Roman', Times, serif;
-    background: black;
+    background: #2a0127;
     color: white;
 }
 
@@ -25,7 +25,7 @@
 
 .grid-area {
     padding: 10px;
-    border: 2px dashed white;
+    border: 2px dashed #00FFF6;
     margin: 10px;
     position: relative;
 }
@@ -71,14 +71,20 @@ pre {
     user-select:all;
 }
 
-h1, header p, h3 {
+h1, h3 {
     text-align: center;
     padding: 0 20px 0 20px;
     color:var(--main-text-color);
 }
 
+header p {
+    text-align: center;
+    padding: 0 20px 0 20px;
+    color: white;
+}
+
 h2 {
-    border: 2px solid white;
+    border: 2px solid #00FFF6;
     border-radius: 10px;
     padding: 10px;
     width: 90%;
