@@ -1,27 +1,89 @@
 * {
     font-family:Georgia, 'Times New Roman', Times, serif;
+    background: black;
+    color: white;
+}
+
+:root {
+    --main-text-color: rgba(246,0,255,1);
 }
 
 .main-grid {
     display: grid;
     padding: 15px;
-    width: 100%;
-    grid-template-rows: 1fr 1fr 1fr;
+    width: 98%;
+     /*unclear why width at 100% is making me scroll */
+    column-gap: 15px;
+    row-gap: 30px;
+    /* to ensure there is enough space between each content box */
+    grid-template-rows: 40% 60%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "flexbox-row flexbox-column CSS-grid-layout"
-    "linear-gradients box-transition-glow overlay-card-with-title"
+    "linear-gradients box-transition-glow overlay-card-with-title";
 }
 
 .grid-area {
     padding: 10px;
+    border: 2px dashed white;
+    margin: 10px;
+    position: relative;
+}
+
+.grid-area h2 {
+    position: absolute;
+    top: -50px;
 }
 
 #flexbox-row {
-    grid-area: "flexbox-row"
-    
+    grid-area: "flexbox-row";
 }
 
+#flexbox-column {
+    grid-area: "flexbox-column"
+}
+
+#CSS-grid-layout {
+    grid-area: "CSS-grid-area"
+}
+
+#linear-gradients {
+    grid-area: "linear-gradients"
+}
+
+#box-transition-glow {
+    grid-area: "box-transition-glow"
+}
+
+#overlay-card-with-title {
+    grid-area: "overlay-card-with-title"
+}
+
+/* styles for code content */
 pre {
-    font-family:monospace;
+    font-family: monospace;
+    background-image: linear-gradient(rgba(246,0,255,1) 0%, rgba(143,0,255,1) 100%);
+    border-radius: 10px;
+    padding: 10px;
+    line-height: 1.5;
+    background-size: cover;
+}
+
+h1, header p, h3 {
+    text-align: center;
+    padding: 0 20px 0 20px;
+    color:var(--main-text-color);
+}
+
+h2 {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%;
+    color:var(--main-text-color);
+    /* don't think width: 90% is the right way to stretch the border regardless of how much text */
+}
+
+p {
+    padding-top: 10px;
 }
