@@ -2,3 +2,16 @@
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+.main-grid {
+    display: grid;
+    padding: 15px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "flexbox-row flexbox-column CSS-grid-layout"
+    "linear-gradients box-transition-glow overlay-card-with-title"
+}
+
+.grid-area {
+    padding: 10px;
+}
