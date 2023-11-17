@@ -5,6 +5,7 @@
 .main-grid {
     display: grid;
     padding: 15px;
+    width: 100%;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
@@ -14,4 +15,9 @@
 
 .grid-area {
     padding: 10px;
+}
+
+#flexbox-row {
+    grid-area: "flexbox-row"
+    
 }
