@@ -11,8 +11,7 @@
 .main-grid {
     display: grid;
     padding: 15px;
-    width: 98%;
-     /*unclear why width at 100% is making me scroll */
+    width: 100%;
     column-gap: 15px;
     row-gap: 30px;
     /* to ensure there is enough space between each content box */
